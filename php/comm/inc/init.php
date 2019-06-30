@@ -1,4 +1,6 @@
 <?php
+echo 'a2';
+require '../comm/a.php';
 class Init {
 //	private $env_relpath_file_name=array(
 //			'comm/cfg/init.cfg.php',
@@ -36,9 +38,9 @@ class Init {
 	 * 打印日志
 	 */
 	
-	public function logerr($logerr){
-	    $_dir=BASE_DIR.'log/log.log';
-	    error_log($logerr.'\r\n',3,$_dir);
+	public function logerr($msglogerr){
+	    $_dir='../log/log.log';
+	    error_log($msglogerr.'\r\n',3,$_dir);
 	}
 	
 /**
